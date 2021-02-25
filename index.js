@@ -2,6 +2,7 @@
 
 const fs = require("fs")
 const args = process.argv.slice(1)
+let path = null
 let filter = null
 let exclude = null
 let extension = null
@@ -12,6 +13,10 @@ if (args.length > 1) {
   options.forEach((pair) => {
     const [key, value] = pair
     switch (key.toLowerCase()) {
+      case "path":
+        path = value
+        console.log(path)
+        break
       case "filter":
         filter = value
         break
@@ -30,7 +35,7 @@ if (args.length > 1) {
 }
 
 fs.readdir(
-  "./",
+  path ? path : "./",
   {
     withFileTypes: true,
   },
