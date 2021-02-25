@@ -8,8 +8,7 @@ let exclude = null
 let extension = null
 
 if (args.length > 1) {
-  let options = args.slice(1)
-  options = options.map((str) => str.split("="))
+  const options = args.slice(1).map((str) => str.split("="))
   options.forEach((pair) => {
     const [key, value] = pair
     switch (key.toLowerCase()) {
