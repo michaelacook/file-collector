@@ -14,7 +14,6 @@ if (args.length > 1) {
     switch (key.toLowerCase()) {
       case "path":
         path = value
-        console.log(path)
         break
       case "filter":
         filter = value
