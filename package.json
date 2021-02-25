@@ -1,0 +1,14 @@
+{
+  "bin": {
+    "file-collector": "./index.js"
+  },
+  "name": "file-collector",
+  "version": "1.0.0",
+  "description": "A simple program to get and filter lists of files in a directory. Useful when you need a large array of files and want to get it programmatically.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael A. Cook",
+  "license": "MIT"
+}
